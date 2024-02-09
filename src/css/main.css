@@ -48,10 +48,9 @@ ul {
     cursor: pointer;
 }
 
-.dropdown-wrapper.open .dropdown {
+.dropdown-wrapper .dropdown {
     transform: translate(0, 20px);
     opacity: 1;
-    visibility: visible;
 }
 
 .btn .material-icons {
@@ -68,8 +67,8 @@ ul {
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+    /* visibility: hidden; */
     transition: 0.3s ease;
 }
 
@@ -97,6 +96,12 @@ ul {
     color: #666;
 }
 
+.dropdown.open {
+        visibility: hidden;
+}
+.dropdown.active {
+        visibility: visible;
+}
 .dropdown-wrapper .dropdown li:hover {
     color: #5380F7;
 }
