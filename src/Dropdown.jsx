@@ -5,7 +5,7 @@ import { useState } from "react"
 function Dropdown() {
   const [state, setState] = useState(false);
   const toggleOpen = () => setState(!state)
-
+    console.log(state)
   return (
 <div className="container">
     <div data-id="wrapper" className="dropdown-wrapper open">

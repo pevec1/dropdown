@@ -97,7 +97,7 @@ ul {
     color: #666;
 }
 
-.dropdown-wrapper .dropdown li.active {
+.dropdown-wrapper .dropdown li:hover {
     color: #5380F7;
 }
 

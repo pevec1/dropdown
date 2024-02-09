@@ -1,6 +1,7 @@
 import "../css/main.css";
 
-function DropdownList(state) {
+function DropdownList({state}) {
+    console.log(state)
   return state === true ? (
     <ul data-id="dropdown" className="dropdown">
       <li className="active">
