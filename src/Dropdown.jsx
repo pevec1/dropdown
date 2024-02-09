@@ -7,16 +7,22 @@ function Dropdown() {
   const toggleOpen = () => setState(!state)
     console.log(state)
   return (
-<div className="container">
-    <div data-id="wrapper" className="dropdown-wrapper open">
-      <button data-id="toggle" className="btn" onClick={()=>toggleOpen()}>
-        <span>Account Settings</span>
-        <i className="material-icons">public</i>
-      </button>
+    <div className="container">
+      <div data-id="wrapper" className="dropdown-wrapper open">
+        <button
+          data-id="toggle"
+          className="btn"
+           onClick={() => toggleOpen()}
+          onBlur={() => toggleOpen()}
+         // onFocus={() => toggleOpen()}
+        >
+          <span>Account Settings</span>
+          <i className="material-icons">public</i>
+        </button>
         <DropdownList state={state} />
+      </div>
     </div>
-  </div>       
-  )
+  );
 }
 
 export default Dropdown;
